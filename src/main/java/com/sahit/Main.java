@@ -3,12 +3,14 @@ package com.sahit;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
-        System.out.print("$ ");
-
+    public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
-        String userInput = scanner.nextLine();
+        while (true) {
+            System.out.print("$ ");
 
-        System.out.println(userInput+": command not found");
+            String userInput = scanner.nextLine();
+
+            System.out.println(userInput + ": command not found");
+        }
     }
 }
